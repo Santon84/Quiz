@@ -449,13 +449,6 @@ const renderQuestion = () => {
     
     }
 
-
-// const renderBackground = () => {
-//         let conteiner = document.querySelector('.conteiner')
-//         console.log(conteiner)
-//         conteiner.style.backgroundImage = `url(${images[index]})`;
-
-//         }
     
 const renderAnswers = () => {
     answers.innerHTML = '';
@@ -524,5 +517,3 @@ if (currentAnswer) {pointSum++};
 renderQuestion();
 renderAnswers();
 renderProgress();
-
-renderBackground();
