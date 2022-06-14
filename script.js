@@ -440,7 +440,7 @@ let progress = document.querySelector('.quiz-progress');
 let answerButton = document.querySelector('.quiz-button');
 let pointSum = 0;
 const endHeader = 'Спасибо за ответы!'
-const endProgressText = ''
+const endProgressText = 'Вопросы закончились'
 
 
 let currentAnswer = false;
