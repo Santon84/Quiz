@@ -439,6 +439,9 @@ let answers = document.querySelector('.quiz__answers');
 let progress = document.querySelector('.quiz-progress');
 let answerButton = document.querySelector('.quiz-button');
 let pointSum = 0;
+const endHeader = 'Спасибо за ответы!'
+const endProgressText = ''
+
 
 let currentAnswer = false;
 let index = 0;
@@ -478,7 +481,7 @@ const renderAnswers = () => {
   }    
 const renderProgress = () => {
 
-    let progressLabel = index === QUIZ_DATA.length ? 'Вопросы кончились!' : `Вопросов ${index} / ${QUIZ_DATA.length}`;
+    let progressLabel = index === QUIZ_DATA.length ? endProgressText : `Вопросов ${index} / ${QUIZ_DATA.length}`;
     
 
     progress.innerHTML = `<label for="progress">${progressLabel} </label>
@@ -500,7 +503,7 @@ if (currentAnswer) {pointSum++};
         renderResults();
         renderProgress();
         
-        quizHeader.textContent = "Конец";
+        quizHeader.textContent = endHeader;
         answerButton.textContent = "Заново"
         answerButton.addEventListener("click", function () {
             window.location.reload();
