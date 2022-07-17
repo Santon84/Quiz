@@ -218,29 +218,29 @@ const QUIZ_DATA1 = [
 
 const QUIZ_DATA = [
     {
-        question: "Человек кушает ртом, а птицы…",
-        answers: [
-                {
-                    id: 1,
-                    value: "Крыльями",
-                    correct: false,
-                } ,
-                {
-                    id: 2,
-                    value: "Носом",
-                    correct: false,
-                },
-                {
-                    id: 3,
-                    value: "Клювом",
-                    correct: true,
-                },
-                {
-                    id: 4,
-                    value: "Ногами",
-                    correct: false,
-                }
-        ]    
+        question: "Дерево с желудями – это...",
+    answers: [
+            {
+                id: 1,
+                value: "Бук",
+                correct: false,
+            } ,
+            {
+                id: 2,
+                value: "Клен",
+                correct: false,
+            },
+            {
+                id: 3,
+                value: "Дуб",
+                correct: true,
+            },
+            {
+                id: 4,
+                value: "Ель",
+                correct: false,
+            }
+    ]    
         
     }, 
     {
